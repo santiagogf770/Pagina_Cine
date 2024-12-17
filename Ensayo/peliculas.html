@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Película</title>
+    <link rel="stylesheet" href="peliculas.css">
+</head>
+<body>
+
+    <!-- Contenedor principal de la película -->
+    <div class="movie-container">
+        <img src="pelicula.jpg" alt="Película" class="movie-image">
+        <div class="movie-details">
+            <h1>Película Ejemplo</h1>
+            <p>Duración: 120 min</p>
+            <button id="openModalBtn">Reservar Asiento</button>
+        </div>
+    </div>
+
+    <!-- Modal de reserva -->
+    <div id="reservationModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <h2>Selecciona tus asientos</h2>
+            <div class="seat-container">
+                <button class="seat" id="A1">A1</button>
+                <button class="seat" id="A2">A2</button>
+                <button class="seat" id="A3">A3</button>
+                <button class="seat" id="B1">B1</button>
+                <button class="seat" id="B2">B2</button>
+                <button class="seat" id="B3">B3</button>
+                <button class="seat" id="C1">C1</button>
+                <button class="seat" id="C2">C2</button>
+                <button class="seat" id="C3">C3</button>
+                <button class="seat" id="D1">D1</button>
+                <button class="seat" id="D2">D2</button>
+                <button class="seat" id="D3">D3</button>
+            </div>
+            <button id="reserveBtn" disabled>Reservar</button>
+        </div>
+    </div>
+
+    <!-- Ventana emergente de confirmación -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span id="closeConfirmationBtn" class="close">&times;</span>
+            <h2>Reserva realizada con éxito</h2>
+            <p><strong>Película:</strong> Película Ejemplo</p>
+            <p><strong>Hora de reserva:</strong> <span id="reserveTime"></span></p>
+            <p><strong>Asientos seleccionados:</strong> <span id="selectedSeats"></span></p>
+            <button id="confirmBtn">Confirmar</button>
+        </div>
+    </div>
+
+    <script src="peliculas.js"></script>
+
+    <footer>
+        <div class="social-container">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://wa.me/123456789" target="_blank">WhatsApp</a>
+        </div>
+        <p>&copy; 2024 Cine, Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
